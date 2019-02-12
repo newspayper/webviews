@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	p Ceci est un paragraphe rajouté par mes soins
+	p En voici un autre, avec un paramètre en plus : #{truc}
+	script.
+		//alert("script inclus dans le .pug !");
+		console.log("log inclus dans le .pug");
+	script(src='javascripts/index.js')
